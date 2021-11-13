@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp">
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#788691"/>
+
+        <TextView
+            android:id="@+id/DI_DIAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_text"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="#A7B0B7"
+            android:text="地点  "/>
+
+        <TextView
+            android:id="@+id/loc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/DI_DIAN"
+            android:layout_alignBottom="@+id/DI_DIAN"
+            android:textStyle="bold"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/LEI_XING"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DI_DIAN"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="#A7B0B7"
+            android:text="类型  "/>
+
+        <TextView
+            android:id="@+id/type_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/LEI_XING"
+            android:layout_alignBottom="@+id/LEI_XING"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="45dp"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/SUCCESS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#A7B0B7"
+            android:textStyle="bold"
+            android:text="投放成功"/>
+
+
+        <TextView
+            android:id="@+id/weight_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SUCCESS"
+            android:layout_alignRight="@+id/SUCCESS"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:textColor="#000"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

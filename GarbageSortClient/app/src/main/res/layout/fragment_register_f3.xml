@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/chinese_text"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:text="再次输入密码"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/PHONE_NUM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号"
+            android:textColor="#BBBBBB"
+            android:layout_below="@+id/chinese_text"
+            android:layout_alignLeft="@+id/chinese_text"/>
+
+        <TextView
+            android:id="@+id/account2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/PHONE_NUM"
+            android:layout_alignBottom="@+id/PHONE_NUM"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/password2_edit"
+            android:layout_below="@+id/chinese_text"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="密码由8~16位字母和数字组成"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxLength="16"
+            android:inputType="textPassword"
+            android:background="#fff"/>
+
+        <Button
+            android:id="@+id/password2_button"
+            android:layout_below="@+id/password2_edit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="next"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:textStyle="bold|italic"
+            android:enabled="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#FFD6D7D7"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

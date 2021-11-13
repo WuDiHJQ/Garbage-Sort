@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThrowActivity"
+    android:background="#fff">
+
+    <include layout="@layout/title"/>
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="退出"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#1050A7"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/time_background1"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="30"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#1050A7"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/time_background"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/finish_throw"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:id="@+id/Greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/user_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/finish_throw"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/to_throw"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

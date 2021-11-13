@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <TextView
+        android:id="@+id/menu_score"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="积分"
+        android:textColor="#A0A1A5"
+        android:layout_marginLeft="40dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/menu_record"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="投放记录"
+        android:textColor="#A0A1A5"
+        android:layout_marginLeft="40dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/menu_help"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="帮助"
+        android:textColor="#A0A1A5"
+        android:layout_marginLeft="40dp"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>

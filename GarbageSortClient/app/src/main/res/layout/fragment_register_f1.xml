@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textSize="40sp"
+            android:textColor="#fff"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/account_edit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:hint="请输入您的手机号"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxLength="11"
+            android:inputType="number"
+            android:background="#fff"/>
+
+        <Button
+            android:id="@+id/account_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:text="next"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:textStyle="bold|italic"
+            android:enabled="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#FFD6D7D7"/>
+
+    </LinearLayout>
+
+</FrameLayout>

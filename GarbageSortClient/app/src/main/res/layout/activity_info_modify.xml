@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FFF">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/back_icon"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="13dp"
+            android:layout_gravity="bottom"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="个人信息"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="bottom"/>
+
+        <TextView
+            android:id="@+id/sign_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出登录"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:paddingRight="25dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3F7FA">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="68dp"
+            android:background="#fff">
+
+            <RelativeLayout
+                android:id="@+id/NICK_NAME_ITEM"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="38dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/nick_name_modify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#9DAFBB"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="45dp"/>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/to_right_icon"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#F3F7FA"/>
+
+            <RelativeLayout
+                android:id="@+id/PHONE_NUM_ITEM"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/phone_num_modify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#9DAFBB"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="45dp"/>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:src="@drawable/to_right_icon"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/header_icon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/header_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
